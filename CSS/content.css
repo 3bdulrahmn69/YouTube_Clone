@@ -1,0 +1,134 @@
+.content {
+    width: calc(100% - 230px);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+}
+
+.content .tags {
+    width: 100%;
+    height: 56px;
+    display: flex;
+    padding-left: 20px;
+    gap: 15px;
+}
+
+
+
+.content .tags .tag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    height: 40px;
+    padding: 10px;
+    background-color: #323232;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    cursor: pointer;
+}
+
+.content .tags .active-tag {
+    background-color: #fff;
+    color: #323232;
+}
+
+.content .tags .tag:hover {
+    opacity: 0.9;
+}
+
+
+.content .videos-container {
+    width: 100%;
+    height: calc(100vh - 140px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.content .videos-container .card {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    overflow: hidden;
+    margin: 12px 10px;
+    width: 400px;
+}
+
+.content .videos-container .card .thumbnail  {
+    width: 100%;
+}
+
+.content .videos-container .card .thumbnail img {
+    width: 100%;
+    border-radius: 16px;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    -ms-border-radius: 16px;
+    -o-border-radius: 16px;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+
+.content .videos-container .card .thumbnail img:hover {
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+}
+
+.content .videos-container .card .details {
+    display: flex;
+    align-items: center;
+}
+
+
+.content .videos-container .card .details .channel-pic {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-right: 10px;
+}
+
+.content .videos-container .card .details .channel-pic img  {
+    width: 100%;
+}
+
+.content .videos-container .card .details .vid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+}
+
+.content .videos-container .card .details .vid .vid-name {
+    width: 320px;
+}
+
+.content .videos-container .card .details .vid .vid-name p {
+    font-size: 1.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.content .videos-container .card .details .vid .vid-details p {
+    color: #cacaca;
+    font-size: 1.3rem;
+}
